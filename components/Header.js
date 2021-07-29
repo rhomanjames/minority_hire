@@ -24,10 +24,10 @@ function Header() {
             </div>
             {/*Right Div*/}
             <div className="space-x-8 flex align-center items-center">
-                <ChatAltIcon className="h-7" />
-                <BellIcon className="h-7" />
-                <UserIcon className="h-7 border-r-2 border-gray-100 pr-4" />
-                <p className="pr-4">Employers / Post a job</p>
+                <ChatAltIcon className="h-16 p-4 border-b-2 border-transparent hover:border-blue-800" />
+                <BellIcon className="h-16 p-4 border-b-2 border-transparent hover:border-blue-800" />
+                <UserIcon className="h-16 p-4 pr-0 border-b-2 border-b-transparent hover:border-blue-800 " />
+                <p className="pr-4 border-l-2 border-gray-200s pl-4">Employers / Post a job</p>
             </div>
         </header>
     )
