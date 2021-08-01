@@ -1,9 +1,14 @@
 import { SearchIcon } from '@heroicons/react/solid'
 import { LocationMarkerIcon } from '@heroicons/react/solid' 
+import PlacesAutocomplete, { 
+    geocodeByAddress,
+    getLatLng,
+  } from 'react-places-autocomplete';
+
 
 function Body() {
     return (
-        <div className="w-full flex  text-lg flex-col">
+        <div className="w-full mt-8 flex flex-grow justify-center text-lg flex-col">
             <div className="flex mx-4 items-center flex-col lg:flex-row justify-center">
                 {/*What input*/}
                 <h1 className="pr-2 mb-2 lg:hidden text-2xl font-bold justify-left w-full">What</h1>

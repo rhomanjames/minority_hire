@@ -7,9 +7,9 @@ import { UserIcon } from '@heroicons/react/solid'
 
 function Header() {
     return (
-        <header className="absolute flex top-0 px-4 justify-between w-full border-gray-100 border-b-2">
+        <header className="flex top-0 px-4 justify-between w-full border-gray-100 border-b-2">
             {/*Left Div*/}
-            <div className="flex space-x-5 pl-2 pt-2 pb-0 align-center items-center ">
+            <div className="flex space-x-5 pl-2 pt-4 pb-0 align-center items-center ">
                 {/*Logo*/}
                 <Image 
                 className="pb-2 items-center align-center"
