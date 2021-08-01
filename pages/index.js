@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Body from '../components/Body'
-
-
+import SuggestedSearch from '../components/SuggestedSearch'
 
 export default function Home() {
   return (
@@ -15,6 +14,9 @@ export default function Home() {
       <Header />
       {/*Body*/}
       <Body />
+      <div>
+      <SuggestedSearch />
+    </div>
     </div>
   )
 }

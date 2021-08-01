@@ -1,14 +1,14 @@
 import { SearchIcon } from '@heroicons/react/solid'
-import { LocationMarkerIcon } from '@heroicons/react/solid'
-
+import { LocationMarkerIcon } from '@heroicons/react/solid' 
 
 function Body() {
     return (
-        <div className="w-full flex text-lg flex-col">
-            <div className="flex items-center justify-center">
+        <div className="w-full flex  text-lg flex-col">
+            <div className="flex mx-4 items-center flex-col lg:flex-row justify-center">
                 {/*What input*/}
-                <div className="border py-3 flex flex-grow ml-20 p-2 rounded-lg max-w-lg border-black">
-                    <h1 className="pr-2 font-bold">What</h1>
+                <h1 className="pr-2 mb-2 lg:hidden text-2xl font-bold justify-left w-full">What</h1>
+                <div className="border w-full py-3  focus-within:shadow-lg flex flex-grow min-w-lg my-2 p-2 rounded-lg  border-black">
+                    <h1 className="pr-2 hidden lg:block font-bold">What</h1>
                     <input 
                     className="flex-grow focus-within:outline-none" 
                     type="text" 
@@ -17,10 +17,11 @@ function Body() {
                     <SearchIcon className="h-6 justify-right right-4" />
                 </div>
                 {/*Where input*/}
-                <div className="border py-3 flex p-2 rounded-lg ml-4 mr-20 flex-grow border-black">
-                    <h1 className="pr-2 font-bold">What</h1>
+                <h1 className="pr-2 mb-2 mt-8 lg:hidden text-2xl font-bold justify-left w-full">Where</h1>
+                <div className="border py-3 w-full mx-4 md focus-within:shadow-lg flex flex-grow p-2 rounded-lg md:ml-4 border-black">
+                    <h1 className="pr-2 hidden lg:block font-bold">Where</h1>
                     <input 
-                    className="flex-grow  focus-within:outline-none" 
+                    className="flex-grow focus-within:outline-none" 
                     type="text" 
                     placeholder="City, state, zip code or 'remote'"
                     />
@@ -28,8 +29,12 @@ function Body() {
 
                 </div>
             </div>
+            {/*Find jobs Btn*/}
+            <div className="flex items-center w-full px-4 justify-evenly align-center">
+                <button className="bg-blue-800 p-2 mt-8 items-center w-full font-bold text-white lg:max-w-md rounded-lg">Find Jobs</button>
+            </div>
             {/*Post a job*/}
-            <div className="align-center mt-4 flex w-full justify-center items-center">
+            <div className="align-center place-items-center mt-4 flex w-full justify-center items-center">
                 <p className="text-blue-800 font-bold" >Employers: post a job - <span className="text-black font-normal">your next hire is here.</span></p>
             </div>
         </div>
