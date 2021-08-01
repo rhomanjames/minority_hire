@@ -11,7 +11,7 @@ function Body() {
         <div className="w-full mt-8 flex flex-grow justify-center text-lg flex-col">
             <div className="flex mx-4 items-center flex-col lg:flex-row justify-center">
                 {/*What input*/}
-                <h1 className="pr-2 mb-2 lg:hidden text-2xl font-bold justify-left w-full">What</h1>
+                <h1 className="pr-2 mb-0 lg:hidden text-2xl font-bold justify-left w-full">What</h1>
                 <div className="border w-full py-3  focus-within:shadow-lg flex flex-grow min-w-lg my-2 p-2 rounded-lg  border-black">
                     <h1 className="pr-2 hidden lg:block font-bold">What</h1>
                     <input 
@@ -36,11 +36,11 @@ function Body() {
             </div>
             {/*Find jobs Btn*/}
             <div className="flex items-center w-full px-4 justify-evenly align-center">
-                <button className="bg-blue-800 p-2 mt-8 items-center w-full font-bold text-white lg:max-w-md rounded-lg">Find Jobs</button>
+                <button className="bg-blue-800 transition p-2 mt-8 items-center w-full font-bold text-white lg:max-w-md rounded-lg">Find Jobs</button>
             </div>
             {/*Post a job*/}
             <div className="align-center place-items-center mt-4 flex w-full justify-center items-center">
-                <p className="text-blue-800 font-bold" >Employers: post a job - <span className="text-black font-normal">your next hire is here.</span></p>
+                <p className="text-blue-800 cursor-pointer font-bold" >Employers: post a job - <span className="text-black font-normal">your next hire is here.</span></p>
             </div>
         </div>
     )
